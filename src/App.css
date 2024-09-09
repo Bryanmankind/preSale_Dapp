@@ -1,38 +1,388 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  background-color: #fafafa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  padding: 5px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar img {
+  margin-left: 50px;
+  width: 150px;
+  height: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar ul {
+  display: flex;
+  margin-left: 10px;
+  text-decoration: none;
+  justify-content: flex-end;
+}
+
+.navbar ul li {
+  align-content: space-between;
+  margin: 20px;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 4px;
+  font-weight: 100%;
+}
+
+.navbar button {
+  display: inline-block;
+  padding: 2px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: black;
+  color: #617CBF;
+  border: 2px solid #617CBF;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 5px;
+  width: 230px;
+  height: 35px;
+  justify-content: flex-end;
+  gap: 0.7rem;
+}
+
+.body{
+background: black;
+color: white;
+display: flex;
+padding: 40px;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+.section-1 {
+  flex-basis: 50%;
+  padding: 30px 30px;
+  display: inline;
+}
+
+.section-1-top {
+  display: flex;
+}
+
+.section-1-top img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.section-1-top h1 { 
+  font-size: 30px;
+  line-height: 36px;
+  display: block;
+  margin-block-start: 0.8em;
+  margin-block-end: 1em;
+  margin-inline-start: 15px;
+  unicode-bidi: isolate;
+}
+
+.text {
+  margin-top: 48px;
+  margin-bottom: 64px;
+}
+.text p {
+  font-size: 1.3rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.167;
+  letter-spacing: -0.01562em;
+  margin-bottom: 20px;
+  text-align: left;
+  color:#b6bcc1;
+}
+
+.investment button {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 12px;
+  background-color: #617CBF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+}
+
+.investment button h4 {
+  font-size: 1.3rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
+  color: #fafafa;
+}
+
+.investment h3 {
+  text-align: left;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
+  margin-top: 10px;
+}
+
+.investment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #242424;
+}
+
+.section-2 {
+  flex-basis: 50%;
+  padding: 30px 30px;
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.first-bar{
+display: block;
+background: linear-gradient(to right,#0655e9, #617CBF );
+width: 500px;
+height: 190px;
+border-radius: 25px;
+margin-left: 30px;
+}
+
+.first-bar-flex{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.first-bar-flex h5 {
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 600;
+  line-height: 1.334;
+  letter-spacing: 0em;
+}
+
+.first-bar-flex p {
+  background-color: rgb(0, 199, 107);
+  font-size: 15px;
+  font-weight: 400;
+  min-width: 140px;
+  color: #fafafa;
+  width: fit-content;
+  padding: 2px 13px;
+  font-size: 15px;
+  min-width: 130px;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+  border-radius: 24px;
+  justify-content: center;
+}
+
+.first-bar-fig {
+  margin: 20px;
+}
+
+.bar {
+  background-color: rgb(0, 199, 107);
+  border-radius: 10px;
+  height: 15px;
+  margin-bottom: 5px;
+}
+
+.first-bar-fig h5 {
+  font-size: 30px;
+  text-align: left;
+  
+}
+
+.participant h5 {
+  text-align: left;
+  font-size: 1rem;
+  margin-left: 20px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 600;
+  line-height: 1.334;
+  letter-spacing: 0em;
+}
+
+.second-bar {
+  padding: 32px;
+  border-radius: 30px;
+  margin-top: 50px;
+  background: linear-gradient(to right,#0655e9, #617CBF );
+  width: 500px;
+  height: 650px;
+  border-radius: 25px;
+  margin-left: 30px;
+  color: #fff;
+  border: 2px solid #153d6f70;
+  display: flex;
+  background: linear-gradient(90deg, rgba(51, 117, 255, 0.6) 0%, rgba(75, 112, 204, 0.7) 25%, rgba(75, 112, 204, 0.7) 50%, rgba(75, 112, 204, 0.7) 75%, rgba(51, 117, 255, 0.6) 100%);
+  box-shadow: 1px 1px 16px 6px rgba(57, 118, 247, 0.3);
+  flex-direction: column;
+}
+
+.second-bar h1 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-align: left;
+}
+
+.second-bar h5 {
+  display: block;
+  margin: 15px;
+  text-align: left;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0em;
+}
+
+.investment .sellToken {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.investment .buyToken {
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #242424;
+  box-shadow: 0px 10px 60px transparent;
+}
+
+.investment .buyToken form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+}
+
+.investment .buyToken .input-group {
+  margin: 20px;
+
+}
+
+.investment .buyToken input {
+  width: 100%;
+  padding: 10px;
+  color: black;
+  border: none;
+  border-radius: 12px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.investment .buyToken p {
+  margin: 5px 0;
+  color: white;
+  font-size: small;
+  text-align: left;
+}
+
+.investment .buyToken h3 {
+  font-size: small;
+  text-align: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: rgb(0, 199, 107);
+  width: 30%;
+  border-radius: 5px;
+  margin: 5px auto;
+}
+
+.investment .buyToken button {
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background-color: #617CBF;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.investment .buyToken button:hover {
+  background-color: #ff6347;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlay-content {
+  width: 50%;
+  height: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.overlay-content h2 {
+  color: #617CBF;
+  text-align: center;
+  font-weight: 100%;
+  font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.overlay-content p {
+  color: #617CBF;
+  text-align: center;
+  font-weight: 100%;
+  font-size: 20px;
 }
+
+
+
+
+
+
+
+
+ 
+  
+
+
+
+
+
