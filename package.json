@@ -9,12 +9,12 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "ajv": "^8.16.0",
+    "ethers": "^6.13.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "web3": "^4.10.0",
-    "ethers": "^6.13.1"
+    "web3": "^4.10.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,7 +41,7 @@
     ]
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.7",
     "@nomicfoundation/hardhat-ignition": "^0.15.0",
     "@nomicfoundation/hardhat-ignition-ethers": "^0.15.0",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
